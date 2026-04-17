@@ -1,1 +1,4 @@
+# En este archivo ignoraremos otros archivos o carpetas que son irrelevantes.
 
+# Esto ignora la carpeta de configuración de IntelliJ
+.idea/
