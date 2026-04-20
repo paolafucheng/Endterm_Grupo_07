@@ -11,7 +11,7 @@ class VehiculoTest {
     @Test
     void noDebeSuperarLaVelocidadMaxima() {
         Vehiculo miCoche = new Vehiculo("Seat", "Ibiza", 100);
-        miCoche.acelerar(150); // Intentamos ir a 150 en un coche de 100
+        miCoche.acelerar(155); // Intentamos ir a 150 en un coche de 100
         assertEquals(100, miCoche.getVelocidadActual());
     }
 }
