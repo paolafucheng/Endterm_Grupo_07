@@ -26,4 +26,12 @@ public class VehiculoTest {
         assertEquals(30, miCoche.getVelocidadActual());
     }
 
+    @Test
+    @DisplayName("La velocidad no debería bajar de cero al frenar mucho")
+    void testFrenarBajoCero() {
+        Vehiculo miCoche = new Vehiculo("Seat", "Ibiza", 120);
+        miCoche.acelerar(10);
+        miCoche.frenar(50); // Frenazo fuerte
+        assertEquals(0, miCoche.getVelocidadActual());
+    }
 }
