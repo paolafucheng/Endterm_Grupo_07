@@ -18,11 +18,12 @@ public class VehiculoTest {
     }
   
     @Test
-      @DisplayName("Debería disminuir la velocidad al frenar")
-      void testFrenar() {
-         Vehiculo miCoche = new Vehiculo("Seat", "Ibiza", 120);
-         miCoche.acelerar(50);
-         miCoche.frenar(20);
-         assertEquals(30, miCoche.getVelocidadActual());
+    @DisplayName("Debería disminuir la velocidad al frenar")
+    void testFrenar() {
+        Vehiculo miCoche = new Vehiculo("Seat", "Ibiza", 120);
+        miCoche.acelerar(50);
+        miCoche.frenar(20);
+        assertEquals(30, miCoche.getVelocidadActual());
     }
+
 }

@@ -21,4 +21,8 @@ public class Vehiculo {
             this.velocidadActual += incremento;
         }
     }
+
+    public void frenar(int decremento) {
+        this.velocidadActual -= decremento;
+    }
 }
