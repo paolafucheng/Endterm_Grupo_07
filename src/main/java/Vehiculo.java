@@ -10,11 +10,14 @@ public class Vehiculo {
         this.velocidadMaxima = velocidadMaxima;
     }
 
-    public void acelerar(int incremento) {
-        this.velocidadActual += incremento;
-    }
-
     public int getVelocidadActual() {
         return velocidadActual;
+    }
+    public void acelerar(int incremento) {
+        if (this.velocidadActual + incremento > this.velocidadMaxima) {
+            this.velocidadActual = this.velocidadMaxima;
+        } else {
+            this.velocidadActual += incremento;
+        }
     }
 }
