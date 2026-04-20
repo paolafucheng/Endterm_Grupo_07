@@ -23,6 +23,12 @@ public class Vehiculo {
     }
 
     public void frenar(int decremento) {
-        this.velocidadActual -= decremento;
+        if (decremento <= 0) return;
+
+        if (this.velocidadActual - decremento < 0) {
+            this.velocidadActual = 0;
+        } else {
+            this.velocidadActual -= decremento;
+        }
     }
 }
